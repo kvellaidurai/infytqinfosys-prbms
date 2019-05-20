@@ -1,0 +1,13 @@
+package main
+
+import ("fmt")
+func main() {
+   var num int=find_square(3);
+   fmt.Println(num);
+    
+}
+   
+   func find_square(i int)int{
+   return(i*i)
+       
+   }
