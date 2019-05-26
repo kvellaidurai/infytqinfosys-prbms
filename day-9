@@ -20,3 +20,23 @@ def get_circular_prime_count(limit):
     return counter
 #Provide different values for limit and test your program
 print(get_circular_prime_count(1000))
+
+
+
+#PF-Assgn-60
+def remove_duplicates(value):
+    ans=""
+    c=0
+    s=str(value)
+    for i in range(0,len(value)):
+        if(value[i]!=" "):
+            if (value[i] in ans):
+                continue
+            else:
+                ans+=value[i]
+                c=1
+    if(c==0):
+        return -1
+    return ans
+
+print(remove_duplicates("11223445566666ababzzz@@@123#*#*"))
