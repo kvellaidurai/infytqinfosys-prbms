@@ -39,24 +39,6 @@ print(create_new_dictionary(prices))
 
 
 
-#PF-Prac-12
-def generate_sentences(subjects,verbs,objects):
-	sentence_list=[]
-	for i in subjects:
-	    for j in verbs:
-	        for k in objects:
-	            sentence_list.append(i+" "+j+" "+k)
-
-	
-	return sentence_list
-
-subjects=["I","You"]
-verbs=["love", "play"]
-objects=["Hockey","Football"]
-print(generate_sentences(subjects,verbs,objects))
-
-
-
 #PF-Prac-4
 def find_nine(nums):
     for i in range(0,len(nums)):
@@ -70,114 +52,7 @@ print(find_nine(nums))
 
 #PF-Prac-5
 def count_digits_letters(sentence):
-    letters=0
- Code  Issues 0  Pull requests 0  Projects 0  Security  Insights  Settings
-infytqinfosys-prbms
-/
-￼
-day-9-ex
-Cancel
-￼ Edit file  ￼ Preview changes
-￼￼￼
-1
-#PF-Prac-1
-2
-def add_string(str1):
-3
-    if(len(str1)<3):
-4
-        return str1
-5
-    if(str1.endswith("ing")):
-6
-        str=str1+"ly"
-7
-        return str
-8
-    else:
-9
-        str=str1+"ing"
-10
-        return str
-11
-str1="com"
-12
-print(add_string(str1))
-13
-​
-14
-​
-15
-#PF-Prac-2
-16
-def bracket_pattern(input_str):
-17
-    if(input_str.startswith(")") and input_str.endswith("(")):
-18
-        return False
-19
-    s1=input_str.count("(")
-20
-    s2=input_str.count(")")
-21
-    if(s1==s2):
-22
-        return True
-23
-    else:
-24
-        return False
-25
-input_str="(())("
-26
-print(bracket_pattern(input_str))
-27
-​
-28
-​
-29
-#PF-Prac-3
-30
-def create_new_dictionary(prices):
-31
-    new_dict={}
-32
-    for key in prices:
-33
-        if(prices[key]>200):
-34
-            new_dict.__setitem__(key,prices[key])
-35
-    return new_dict
-36
-​
-37
-prices = { 'ACME': 45.23,'AAPL': 612.78,'IBM': 205.55,'HPQ': 37.20,'FB': 10.75}
-38
-print(create_new_dictionary(prices))
-39
-​
-40
-​
-41
-​
-42
-#PF-Prac-12
-43
-def generate_sentences(subjects,verbs,objects):
-44
-        sentence_list=[]
-45
-        for i in subjects:
-46
-            for j in verbs:
-47
-                for k in objects:
-48
-                    sentence_list.append(i+" "+j+" "+k)
-49
-​
-
+    letter=0
     digit=0
     l=[]
     for i in sentence:
@@ -192,6 +67,7 @@ def generate_sentences(subjects,verbs,objects):
     return l
 sentence="Infosys Mysore 570027"
 print(count_digits_letters(sentence))
+
 
 
 #PF-Prac-6
