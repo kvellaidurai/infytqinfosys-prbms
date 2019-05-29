@@ -36,7 +36,20 @@ def create_new_dictionary(prices):
 
 prices = { 'ACME': 45.23,'AAPL': 612.78,'IBM': 205.55,'HPQ': 37.20,'FB': 10.75}
 print(create_new_dictionary(prices))
-
+                                   (or)
+#PF-Prac-3	
+import ast
+def create_new_dictionary(prices):
+    n=ast.literal_eval(prices)
+    new_dict={}
+    for key,value in n.items():
+        if value>200:
+            new_dict[key]=value
+    sorted_d=sorted(new_dict.items())
+    return dict(sorted_d)
+prices=input()
+print(create_new_dictionary(prices))
+    
 
 
 #PF-Prac-4
