@@ -14,7 +14,7 @@ print(add_string(str1))
 
 #PF-Prac-2
 def bracket_pattern(input_str):
-    if(input_str.startswith(")") and input_str.endswith("(")):
+    if(input_str.startswith(")") or input_str.endswith("(")):
         return False
     s1=input_str.count("(")
     s2=input_str.count(")")
